@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-padrao: Sriracha, Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Passion One', Arial, Helvetica, sans-serif;
 }
@@ -28,7 +29,7 @@ header > h1 {
 }
 
 header > p {
-   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   font-family: var(--fonte1); 
    color: white;
    text-align: center;
    padding-bottom: 50px;
@@ -57,28 +58,28 @@ section > p {
     padding-bottom: 2em;
 }
 
+section.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+}
+
 section.imagem > p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px;
-    text-shadow: 2px 1px 2px rgb(0 0 0 / 70%);
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01 {
     background-image: url('../imagens/background001.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom right;
-    box-shadow: inset 2px 1px 10px rgba(0, 0, 0, 0.8);
+    background-position: right center;
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-size: cover;
-    background-attachment: fixed;
     background-position: bottom left;
-    box-shadow: inset 2px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
 footer > p {
